@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.75;
+    font-size: 16px;
+    color: #707070;
+}
+
+.inner {
+    width: 1.5;
+}
+
+header {
+    padding: 40px auto;
+    background-color: #123D88;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.rogo {
+    display: grid;
+}
+
+.mainvisual {
+    background-image: url(./images/bg_mainvisual.png);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.mainvisual {
+    padding-top: 280px;
+    padding-bottom: 30px;
+    color: #F7FAFF;
+    text-align: center;
+}
+
+.mainvisual p {
+    padding-bottom: 60px;
+    color: #F7FAFF;
+    text-align: center;
+}
+
+.btn1 {
+    padding-bottom: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn1 a {
+    padding: 20px 40px;
+    background-color: #F87624;
+    color: #F7FAFF;
+}
+
+.what {
+    background-color: #F7FAFF;
+}
+
+.What h1 {
+    margin-top: 120px;
+    text-align: center;
+    color: #2F2F35;
+}
+
+.what p {
+    color: #123D88;
+}
+
+ul {
+    gap: 60px;
+}
+
+.set {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+/* .what ul {
+    display: grid;
+    grid-auto-flow: column;
+} */
+.ri-do {
+    margin-top: 120px;
+    color: #256BE6;
+}
+
+.ONLINE-PAYMENT h1 {
+    padding-top: 20px;
+    color: #262934;
+}
+
+.pe-ji p {
+    padding-top: 30px;
+}
+
+.pe-ji2 {
+    padding-top: 40px;
+}
+
+.btn2 {
+    padding-bottom: 100px;
+    margin-top: 60px;
+}
+
+.btn2 a {
+    padding: 20px 40px;
+    background-color: #256BE6;
+    color: #F7FAFF;
+}
+
+.OUR-FEATURES {
+    background-color: #F7FAFF;
+
+}
+
+.OUR-FEATURES h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #262934;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.OUR-FEATURES ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    row-gap: 70px;
+    padding-bottom: 120px;
+}
+
+footer p {
+    padding: 80px 0 40px;
+    background-color: #123D88;
+    color: #fff;
+    text-align: end;
+}
