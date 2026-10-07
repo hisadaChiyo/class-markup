@@ -17,11 +17,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+
 }
 
-.rogo {
-    display: grid;
-}
+
 
 .mainvisual {
     background-image: url(./images/bg_mainvisual.png);
