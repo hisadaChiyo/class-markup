@@ -73,7 +73,7 @@ body img {
   padding-left: 26px;
   color: #bbbbbb;
   font-size: 12px;
-  background: url(./images/icon_time.png) no-repeat left center;
+  background: url(../images/icon_time.png) no-repeat left center;
 }
 
 .btn {
@@ -95,5 +95,98 @@ body img {
 
 /* index.html
 ------------------------------ */
+.news {
+  padding-bottom: 60px;
+}
+.news__inner {
+  max-width: 800px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news__title {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 10px solid #fa6980;
+  color: #202124;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2916666667;
+  text-transform: uppercase;
+}
+.news__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 5%;
+}
+
+.trending {
+  padding: 60px 0;
+  background-color: #f6f6f6;
+}
+.trending__inner {
+  max-width: 800px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.trending__title {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 10px solid #fa6980;
+  color: #202124;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2916666667;
+  text-transform: uppercase;
+}
+.trending__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 5%;
+}
+
 /* about.html
------------------------------- *//*# sourceMappingURL=style.css.map */
+------------------------------ */
+.btn__auto {
+  background: #202124;
+  display: block;
+  width: 160px;
+  margin-top: 25px;
+  margin-left: auto;
+  padding: 14px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn__auto:hover {
+  background-color: #202124;
+}
+
+.discovery {
+  padding: 60px 0;
+  background-color: #f6f6f6;
+}
+.discovery__inner {
+  max-width: 800px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.discovery__title {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 10px solid #fa6980;
+  color: #202124;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2916666667;
+  text-transform: uppercase;
+}
+.discovery__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px 5%;
+}/*# sourceMappingURL=style.css.map */
