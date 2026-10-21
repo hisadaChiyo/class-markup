@@ -1,0 +1,85 @@
+$font-family-title: Helvetica, Arial, sans-serif;
+$font-faily-text: 'Times New Roman', Times, serif;
+$color-text: #9E9E9E;
+$color-title: #292F39;
+$color-accent: #FF1D6A;
+$color-main: #5EB6E1;
+
+
+@mixin title-main() {
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid $color-main;
+    color: #292F39;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: math.div(42, 32);
+    text-transform: uppercase;
+}
+
+
+.hader {
+    &gnav {}
+
+    &__nav {}
+}
+
+.footer {
+    background-color: $color-main;
+    padding: 60px 0 60px;
+    text-align: center;
+
+    &__inner {}
+
+    small {
+        font-size: 12px;
+        color: #fff;
+    }
+}
+
+.welcum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    .title {
+        @include title-main();
+    }
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    padding: 25px 58px;
+    background-color: $color-main;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+
+    &:hover {
+        background-color: $color-text;
+    }
+}
+
+
+.team {
+    padding: 100px 0 100px;
+    background-color: $color-title;
+    text-align: center;
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    dd {
+        color: #fff;
+    }
+
+    dt {
+        color: $color-accent;
+    }
+}
