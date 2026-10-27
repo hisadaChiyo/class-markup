@@ -1,0 +1,37 @@
+$clor-main: #123D88;
+
+.intro {
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    // 上下の余白の％は親要素の横幅が基準
+    font-size: 100%;
+    /* 親要素の何倍か？(bodyのデフォルトは16px)
+    Google Chromeは10pxより小さくならない*/
+
+    &__catch {
+        color: $clor-main;
+        padding: 1em;
+        font-size: 0.4375em;
+        // ↑計算がいる
+        width: 10em;
+    }
+
+    &__content {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+}
+
+.html {
+    font-size: 30px;
+}
+
+.btn {
+    background-color: $clor-main;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0.8rem;
+    font-size: 3rem;
+    width: 100px;
+}

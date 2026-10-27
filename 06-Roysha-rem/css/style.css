@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.intro {
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 100%;
+  /* 親要素の何倍か？(bodyのデフォルトは16px)
+  Google Chromeは10pxより小さくならない*/
+}
+.intro__catch {
+  color: #123D88;
+  padding: 1em;
+  font-size: 0.4375em;
+  width: 10em;
+}
+.intro__content {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.html {
+  font-size: 30px;
+}
+
+.btn {
+  background-color: #123D88;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  font-size: 3rem;
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */
