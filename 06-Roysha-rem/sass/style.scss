@@ -1,37 +1,71 @@
-$clor-main: #123D88;
+@use "sass:math";
+$color-main: #256BE6;
+$color-text: #6C6C6F;
+$color-base: #262934;
+$font-size-base: 16;
 
-.intro {
-    width: 50%;
-    margin-left: 5%;
-    margin-top: 5%;
-    // 上下の余白の％は親要素の横幅が基準
-    font-size: 100%;
-    /* 親要素の何倍か？(bodyのデフォルトは16px)
-    Google Chromeは10pxより小さくならない*/
-
-    &__catch {
-        color: $clor-main;
-        padding: 1em;
-        font-size: 0.4375em;
-        // ↑計算がいる
-        width: 10em;
-    }
-
-    &__content {
-        font-size: 2rem;
-        margin: 1rem;
-    }
+@function rem($px-value) {
+    @return#{math.div($px-value,$font-size-base)}rem;
 }
 
-.html {
-    font-size: 30px;
+// ① pxをremに変換する関数
+@function rem($px-value) {
+    @return #{math.div($px-value, $font-size-base)}rem;
+}
+
+// ② XD/Figmaのトラッキング値をemに変換する関数
+@function ls($xd-value) {
+    @return #{math.div($xd-value, 1000)}em;
+}
+
+// ③ 親要素の幅に対する「%」を自動計算する関数
+@function pct($target-px, $parent-px) {
+    @return math.percentage(math.div($target-px, $parent-px));
+}
+
+
+body {
+    font-size: 0.875rem;
+    // 14/16=0.875倍
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: math.div(28, 16);
+    letter-spacing: ls(50);
+    color: $color-text;
+}
+
+.intro {
+    &__catch {
+        font-size: rem(12);
+        color: $color-main;
+        margin-bottom: em(20, 12);
+        // 20/16=1.25倍
+    }
+
+    &__title {
+        margin-bottom: rem(36);
+        font-size: rem(36);
+        color: $color-base;
+        font-weight: blod;
+        line-height: math.div(48, 36);
+    }
 }
 
 .btn {
-    background-color: $clor-main;
+    display: block;
+    width: em(200, 14);
+    padding: em(20, 14);
+    border-radius: 9999px;
     color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: ls(75);
     text-align: center;
-    padding: 0.5rem 0.8rem;
-    font-size: 3rem;
-    width: 100px;
+    background-color: $color-main;
+}
+
+.card {
+    &__title {
+        font-size: rem(22);
+        color: $color-base;
+    }
 }
