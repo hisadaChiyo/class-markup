@@ -204,8 +204,8 @@ p {
 
     &__inner {
         @include inner();
-
     }
+
 }
 
 .card {
@@ -217,6 +217,13 @@ p {
         padding: rem(24) 0 rem(24);
         font-size: rem(18);
     }
+
+    @include mq(md) {
+        gap: rem(50);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 }
 
 .schedule {
@@ -225,8 +232,9 @@ p {
 
     &__note {
         text-align: left;
+        padding-top: rem(24);
 
-        @include mq(md) {
+        @include mq(lg) {
             display: none;
         }
     }
@@ -264,15 +272,23 @@ p {
 
     }
 
+    // 一番上の行
     thead th {
         background-color: $color-scroll;
         color: $color-text;
         font-weight: bold;
     }
 
+    // 曜日列（月〜日）
     tbody th {
-        background-color: $color-text;
-        color: $color-scroll;
+        background-color: $color-scroll;
+        color: $color-text;
         font-weight: bold;
+    }
+
+    // 中身（追加）
+    tbody td {
+        background-color: $color-white;
+        color: $color-text;
     }
 }
