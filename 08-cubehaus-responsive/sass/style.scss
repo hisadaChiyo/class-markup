@@ -7,8 +7,9 @@
 $color-text: #000000;
 $color-base: #F4F4F4;
 $color-main: #E40465;
-$color-bg: #2F2F2F;
+$color-footer: #2F2F2F;
 $color-white: #ffffff;
+$color-scroll: #EDEFF2;
 
 // Typography
 $font-size-base: 16;
@@ -73,4 +74,205 @@ $breakpoints: (
     width: $w;
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin title() {
+    font-weight: bold;
+    font-size: rem(32);
+    padding-top: rem(124);
+    padding-bottom: rem(25);
+    margin-bottom: rem(64);
+    width: 133px;
+    display: inline-block;
+    border-bottom: 2px solid $color-main;
+}
+
+body {
+    color: $color-text;
+    font-family: $font-family-gothic;
+    font-size: rem(14);
+    line-height: math.div(31, 18);
+    letter-spacing: ls(50);
+}
+
+.haeder {
+    &__inner {
+        @include inner();
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-size: rem(24);
+        font-weight: bold;
+        line-height: math.div(29, 24);
+        letter-spacing: ls(100);
+    }
+
+}
+
+.gnav {
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: rem(28);
+    }
+
+    a {
+        font-size: rem(12);
+        line-height: math.div(14, 12);
+        transition: .2s;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+
+    &__active {
+        color: $color-main;
+    }
+}
+
+.footer {
+    padding: rem(80) 0;
+    color: #fff;
+    background-color: $color-footer;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__copyright {
+        text-align: center;
+
+        small {
+            font-size: rem(12);
+            font-weight: bold;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+p {
+    text-wrap: pretty;
+    margin-bottom: rem(48);
+}
+
+.hero {
+    padding-top: rem(48);
+
+    &__inner {
+        @include inner();
+    }
+}
+
+
+
+.corporate {
+    text-align: center;
+
+    &__inner {
+        @include inner();
+
+    }
+
+    &__title {
+        @include title ();
+    }
+
+    &__lead {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+}
+
+.works {
+    padding-bottom: rem(124);
+    text-align: center;
+    background-color: $color-base;
+
+    &__title {
+        @include title ();
+    }
+
+    &__inner {
+        @include inner();
+
+    }
+}
+
+.card {
+    gap: rem(64);
+
+    &__title {
+        font-weight: bold;
+        text-align: left;
+        padding: rem(24) 0 rem(24);
+        font-size: rem(18);
+    }
+}
+
+.schedule {
+    text-align: center;
+    padding-bottom: rem(124);
+
+    &__note {
+        text-align: left;
+
+        @include mq(md) {
+            display: none;
+        }
+    }
+
+    &__title {
+        @include title();
+    }
+
+    &__inner {
+        @include inner();
+    }
+
+    &__scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: rem(14);
+        background-color: $color-white;
+        border-radius: rem(8);
+    }
+
+    &__table {
+        width: 100%;
+        min-width: 640px;
+        border-collapse: collapse;
+
+    }
+
+    th,
+    td {
+        padding: rem(15) rem(60);
+        border: 1px solid $color-text;
+        white-space: nowrap;
+        font-size: rem(14);
+        text-align: center;
+
+    }
+
+    thead th {
+        background-color: $color-scroll;
+        color: $color-text;
+        font-weight: bold;
+    }
+
+    tbody th {
+        background-color: $color-text;
+        color: $color-scroll;
+        font-weight: bold;
+    }
 }

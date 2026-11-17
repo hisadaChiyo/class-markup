@@ -1,1 +1,198 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  color: #000000;
+  font-family: "Yu Gothic", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.7222222222;
+  letter-spacing: 0.05em;
+}
+
+.haeder__inner {
+  max-width: 1000px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+.haeder__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2083333333;
+  letter-spacing: 0.1em;
+}
+
+.gnav__list {
+  display: grid;
+  grid-auto-flow: column;
+  -moz-column-gap: 1.75rem;
+       column-gap: 1.75rem;
+}
+.gnav a {
+  font-size: 0.75rem;
+  line-height: 1.1666666667;
+  transition: 0.2s;
+}
+.gnav a:hover {
+  color: #E40465;
+}
+.gnav__active {
+  color: #E40465;
+}
+
+.footer {
+  padding: 5rem 0;
+  color: #fff;
+  background-color: #2F2F2F;
+}
+.footer__inner {
+  max-width: 1000px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__copyright {
+  text-align: center;
+}
+.footer__copyright small {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+p {
+  text-wrap: pretty;
+  margin-bottom: 3rem;
+}
+
+.hero {
+  padding-top: 3rem;
+}
+.hero__inner {
+  max-width: 1000px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.corporate {
+  text-align: center;
+}
+.corporate__inner {
+  max-width: 1000px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.corporate__title {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 7.75rem;
+  padding-bottom: 1.5625rem;
+  margin-bottom: 4rem;
+  width: 133px;
+  display: inline-block;
+  border-bottom: 2px solid #E40465;
+}
+.corporate__lead {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.works {
+  padding-bottom: 7.75rem;
+  text-align: center;
+  background-color: #F4F4F4;
+}
+.works__title {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 7.75rem;
+  padding-bottom: 1.5625rem;
+  margin-bottom: 4rem;
+  width: 133px;
+  display: inline-block;
+  border-bottom: 2px solid #E40465;
+}
+.works__inner {
+  max-width: 1000px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  gap: 4rem;
+}
+.card__title {
+  font-weight: bold;
+  text-align: left;
+  padding: 1.5rem 0 1.5rem;
+  font-size: 1.125rem;
+}
+
+.schedule {
+  text-align: center;
+  padding-bottom: 7.75rem;
+}
+.schedule__note {
+  text-align: left;
+}
+@media (width >= 700px) {
+  .schedule__note {
+    display: none;
+  }
+}
+.schedule__title {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 7.75rem;
+  padding-bottom: 1.5625rem;
+  margin-bottom: 4rem;
+  width: 133px;
+  display: inline-block;
+  border-bottom: 2px solid #E40465;
+}
+.schedule__inner {
+  max-width: 1000px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.schedule__scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.875rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+.schedule__table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+.schedule th,
+.schedule td {
+  padding: 0.9375rem 3.75rem;
+  border: 1px solid #000000;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.schedule thead th {
+  background-color: #EDEFF2;
+  color: #000000;
+  font-weight: bold;
+}
+.schedule tbody th {
+  background-color: #000000;
+  color: #EDEFF2;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
