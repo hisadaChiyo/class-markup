@@ -194,7 +194,14 @@ p {
   gap: 3.125rem;
 }
 .card__item {
+  position: relative;
   background-color: #F4F4F4;
+}
+.card__item::after {
+  content: url(../images/icon_cart.png);
+  position: absolute;
+  top: -0.9375rem;
+  right: 0.9375rem;
 }
 .card__title {
   font-weight: bold;

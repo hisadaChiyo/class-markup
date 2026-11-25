@@ -260,6 +260,7 @@ p {
         gap: rem(30);
         margin-bottom: rem(35);
     }
+
 }
 
 .card {
@@ -268,9 +269,18 @@ p {
     gap: rem(50);
 
     &__item {
+        position: relative;
         background-color: $color-bg;
 
+        &::after {
+            content: url(../images/icon_cart.png);
+            position: absolute;
+            top: rem(-15);
+            right: rem(15);
+        }
     }
+
+
 
     &__title {
         font-weight: bold;
